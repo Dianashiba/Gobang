@@ -307,12 +307,12 @@ func up(c *gin.Context) {
 	}
 
 	h, err := strconv.Atoi(c.Query("h"))
-	if err != nil || h < 0 || h > 18 {
+	if err != nil || h < 0 || h > 29 {
 		c.JSON(502, "error") //参数错误
 		return
 	}
 	l, err := strconv.Atoi(c.Query("l"))
-	if err != nil || l < 0 || l > 18 {
+	if err != nil || l < 0 || l > 29 {
 		c.JSON(502, "error") //参数错误
 		return
 	}
